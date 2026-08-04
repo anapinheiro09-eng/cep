@@ -1,0 +1,105 @@
+/* Configuração e reset global básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7c5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container principal centralizado */
+.container {
+    background-color: #c4289a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Área do campo de busca */
+.busca-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #5888a8;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    background-color: #db349b;
+    color: rgb(248, 241, 241);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #bd21a8;
+}
+
+/* Feedbacks de retorno na interface (DOM) */
+#resultado {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.loading {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+}
+
+.erro {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card formatado com os dados recebidos da API */
+.endereco-card {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #2ecc71;
+    border-radius: 4px;
+}
+
+.endereco-card p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.endereco-card p:last-child {
+    margin-bottom: 0;
+}
