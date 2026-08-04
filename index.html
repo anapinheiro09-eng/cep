@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de CEP</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 400px; margin: 0 auto; text-align: center; }
+        input { padding: 10px; width: 60%; margin-bottom: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+        #resultado { margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; min-height: 50px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Buscador de CEP</h2>
+        <input type="text" id="cep" placeholder="Digite apenas números (ex: 01001000)">
+        <button id="buscar">Buscar</button>
+        
+        <div id="resultado">
+            </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
